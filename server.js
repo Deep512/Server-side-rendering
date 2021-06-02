@@ -24,6 +24,7 @@ app.get("*", (req, res) => {
             <body>
                 <div id="root">${app}</div>
                 <script src="client_bundle.js"></script>
+                <script src="/reload/reload.js"></script>
             </body>
         </html>
     `);

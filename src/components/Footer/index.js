@@ -1,7 +1,11 @@
 import React, { useState, useEffect } from "react";
 
 const Footer = (props) => {
-	return <footer>I am the footer</footer>;
+	return (
+		<footer>
+			<p>Copyright &copy; Myntra Ltd.</p>
+		</footer>
+	);
 };
 
 export default Footer;
