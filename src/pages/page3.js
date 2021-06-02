@@ -1,8 +1,5 @@
 import React, { useState, useEffect } from "react";
 
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-
 const Page3 = () => {
 	const links = [
 		{
@@ -21,7 +18,6 @@ const Page3 = () => {
 
 	return (
 		<div>
-			{/* <Header links={links} /> */}
 			<div className="content">
 				<p style={{ textAlign: "center", fontWeight: "bold" }}>This is Page3</p>
 				<div>
@@ -58,7 +54,6 @@ const Page3 = () => {
 					Nam ornare turpis at leo scelerisque, eget auctor nisl tempor.
 				</div>
 			</div>
-			<Footer />
 		</div>
 	);
 };
