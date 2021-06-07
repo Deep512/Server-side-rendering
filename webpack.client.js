@@ -1,8 +1,7 @@
 const path = require("path");
-
 module.exports = {
 	mode: "development",
-	target: "node",
+	target: "web",
 	entry: "./src/index.js",
 	output: {
 		filename: "client_bundle.js",
@@ -13,10 +12,11 @@ module.exports = {
 		rules: [
 			{
 				test: /\.(js)$/,
+				exclude: /(node_modules)/,
 				loader: "babel-loader",
 			},
 			{
-				test: /\.s?css$/,
+				test: /\.css$/,
 				use: ["style-loader", "css-loader"],
 			},
 			{
